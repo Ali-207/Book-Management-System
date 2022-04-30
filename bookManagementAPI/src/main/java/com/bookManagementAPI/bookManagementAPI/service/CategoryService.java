@@ -1,0 +1,20 @@
+package com.bookManagementAPI.bookManagementAPI.service;
+
+import com.bookManagementAPI.bookManagementAPI.entity.Category;
+
+import java.util.List;
+
+
+public interface CategoryService {
+
+    public List<Category> findAllCategories();
+
+    public Category findCategoryById(Long id);
+
+    public void createCategory(Category category);
+
+    public void updateCategory(Long id);
+
+    public void deleteCategory(Long id);
+
+}
